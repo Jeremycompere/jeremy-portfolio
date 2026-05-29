@@ -1,75 +1,74 @@
-# Jeremy — Professional Compere & MC Portfolio
+# Jeremiah "Jeremy" Ibiwoye — Professional Event Host, Compere & MC
 
-Welcome to your restructured, high-performance portfolio website! 
+> *"The Host with the Most"*
+> 
+> **Lagos, Nigeria • Available Globally**
 
-This repository contains the split, modularized version of your website. It has been transformed from a single heavy HTML file into a clean, modern web structure. This organization makes it incredibly easy to edit, lightning-fast to load, and perfectly set up for professional hosting.
+Welcome to the official repository for the professional portfolio of **Jeremiah "Jeremy" Ibiwoye**, a premium Compere, Master of Ceremonies, and Event Host based in Lagos, Nigeria. 
 
----
-
-## 📂 Project Structure
-
-Your files are organized like a professional web repository:
-
-```
-jeremy-portfolio/
-├── index.html          # Main webpage (optimized content & SEO meta tags)
-├── css/
-│   └── style.css       # Clean external vanilla CSS (custom variables, responsive layout)
-├── js/
-│   └── script.js       # External JS (scroll animations & media helper script)
-├── assets/
-│   ├── logo.png        # Extracted high-res header & footer logo
-│   ├── headshot.jpg    # Extracted TEDx close-up portrait placeholder
-│   └── watermark.png   # Extracted large background J watermark
-└── .gitignore          # Keeps your git repository clean
-```
+From commanding high-protocol corporate summits to orchestrating the dynamic energy of major outdoor festivals and wedding receptions, Jeremy brings unshakeable presence, meticulous preparation, and refined charisma to every stage.
 
 ---
 
-## 💻 1. How to View and Edit Locally
+## 📈 Performance & Impact Metrics
 
-To work on your site locally:
-1. Open the **`jeremy-portfolio`** folder in your text editor (e.g. VS Code, Antigravity IDE).
-2. To test the site, simply double-click the **`index.html`** file, which will open it instantly in any web browser.
-3. **To change styles**: Open `css/style.css` to modify color schemes, margins, and sizes.
-4. **To replace images**: Simply replace the files in the `assets/` folder with your own files under the exact same names (e.g., replace `headshot.jpg` with a new portrait image named `headshot.jpg` and the website will update automatically!).
+* **50+** Events Hosted (Corporate galas, weddings, festivals, and product launches)
+* **10,000+** Audience Members Reached globally
+* **5★** Average Client Rating across all speaking engagements
 
 ---
 
-## 🚀 2. How to Upload to GitHub (Step-by-Step)
+## 🎙️ Areas of Expertise & Services
 
-To host your website, the first step is uploading it to **GitHub**. Here is the easiest way for non-coders:
+Jeremy specializes in tailoring his delivery style to match the exact protocol and emotional tone of each occasion:
 
-### Option A: Using the GitHub Website (No Command Line)
-1. Go to [github.com](https://github.com/) and log in (or create a free account).
-2. In the top-right corner, click the **`+`** icon and select **New repository**.
-3. Name it `jeremy-portfolio` and choose **Public**. Leave other options unchecked, then click **Create repository**.
-4. On the next screen, look for the link **"uploading an existing file"** in the introduction text. Click it!
-5. Drag and drop all the contents of the `jeremy-portfolio` folder (the `index.html`, `.gitignore`, `css/` folder, `js/` folder, and `assets/` folder) directly into the browser.
-6. Scroll down, write a comment like `Initial commit`, and click **Commit changes**.
-7. *Done! Your code is now safely on GitHub.*
+### 💼 Corporate Functions & Summits
+* **Specialties:** Panel moderating, executive galas, awards ceremonies, and VIP protocol management.
+* **Approach:** Structured yet engaging, respecting timelines with meticulous clock-management while maintaining standard corporate decorum.
 
-### Option B: Using GitHub Desktop (Highly Recommended GUI tool)
-1. Download and install [GitHub Desktop](https://desktop.github.com/).
-2. Log in with your GitHub account.
-3. Choose **File > Add local repository...**, select your `C:\Users\Sam\.gemini\antigravity-ide\scratch\jeremy-portfolio` folder, and click **Create a repository here** if prompted.
-4. Click **Publish repository** to push it instantly to your online GitHub account.
+### 💍 Weddings & Social Celebrations
+* **Specialties:** High-profile reception officiating, timeline coordination, vendor synchronization, and couple-focused interactive games.
+* **Approach:** Joyful, charismatic, and seamless—creating standard memories without chaos.
+
+### 🎪 Festivals & Live Public Events
+* **Specialties:** Outdoor festivals, multi-act stages, family-oriented events, and crowd activation.
+* **Approach:** High-tempo, high-energy hosting designed to command massive crowds and keep audiences engaged across multi-day schedules.
 
 ---
 
-## 🌐 3. How to Deploy to Vercel (For Free!)
+## 📅 Highlighted Engagements
 
-Once your code is on GitHub, you can host it live on the web in seconds using **Vercel**:
-1. Visit [vercel.com](https://vercel.com/) and sign up / log in using your **GitHub account**.
-2. Click the **Add New...** button and select **Project**.
-3. Vercel will show a list of your GitHub repositories. Find `jeremy-portfolio` and click **Import**.
-4. Leave all settings at their default values (no build configuration or framework setup is needed since this is standard HTML/CSS/JS).
-5. Click **Deploy**.
-6. *Within 15 seconds, Vercel will give you a live production link (e.g. `jeremy-portfolio.vercel.app`)!*
+Jeremy's select hosting resume includes:
 
-Whenever you update your code on GitHub in the future, Vercel will automatically detect the changes and update your live website instantly.
+1. **TEDx Talk Lagos (Event Compere — Nov 2023)**
+   * Hosted the flagship annual event for 500+ delegates and global livestream viewers. Managed transitions and synchronized speaker slots perfectly.
+2. **Airtel Corporate Gala & Awards (Eko Hotels — Sept 2023)**
+   * Officiated the corporate recognition night for executive stakeholders, managing a tight awards sequence and formal timeline.
+3. **Lagos Youth & Family Fun Festival (Freedom Park — Aug 2023)**
+   * Brought dynamic interactive games and continuous outdoor hosting for over 2,000 children and families.
+4. **The Grand Royal Wedding Reception (Victoria Island — Oct 2023)**
+   * Hosted a major reception for over 800 guests, coordinating vendor timing and organizing standard couple activities.
 
 ---
 
-## 🔒 License & Copyright
-© 2026 Jeremiah Ibiwoye · Lagos, Nigeria. All rights reserved.
+## 💎 Custom Service Packages
+
+| Service Category | Typical Duration | Features Included |
+| :--- | :--- | :--- |
+| **Corporate Summit / Gala** | Up to 6 Hours | Panel moderation, strict VIP timeline sync, Soundcheck / Rehearsal walk-throughs |
+| **Wedding Reception** | Up to 7 Hours | Custom couple trivia, coordination with wedding planners, full reception officiating |
+| **Festival MC** | Up to 8 Hours | Multi-act stage hosting, audience engagement, multi-day scheduling coordination |
+| **Social & Brand Activations** | Up to 4 Hours | Product launches, private dinners, soirées, brand representation |
+
+---
+
+## 📩 Booking & Consultations
+
+Are you planning an event that deserves an exceptional, professional host? Connect with Jeremy directly:
+
+* **Email:** [jeremiaholaoluwa288@gmail.com](mailto:jeremiaholaoluwa288@gmail.com)
+* **Phone / WhatsApp:** [+234 814 427 8248](https://wa.me/2348144278248)
+* **Instagram:** [@jayibiwoye](https://www.instagram.com/jayibiwoye)
+
+---
+*© 2026 Jeremiah Ibiwoye. Portfolio designed for optimal search visibility, modern standards, and fully responsive performance.*
