@@ -150,7 +150,8 @@ section { position: relative; }
   padding: 40px;
 }
 .hero-photo-frame {
-  width: 380px; height: 480px;
+  width: 380px; height: 380px;
+  border-radius: 50%;
   position: relative; overflow: hidden;
 }
 .hero-photo-frame img {
@@ -178,8 +179,8 @@ section { position: relative; }
 }
 
 .hero-stats {
-  position: absolute; bottom: 60px; left: 52px;
   display: flex; gap: 52px; z-index: 1;
+  margin-top: 40px; margin-bottom: 40px;
 }
 .stat-item { text-align: center; }
 .stat-num {
@@ -437,7 +438,6 @@ footer p { font-size: 11px; color: rgba(255,255,255,0.25); letter-spacing: 0.06e
   .hero { grid-template-columns: 1fr; padding: 100px 24px 200px; }
   .hero::before { display: none; }
   .hero-image-wrap { display: none; }
-  .hero-stats { left: 24px; }
   section { padding: 72px 24px; }
   .section-header { flex-direction: column; align-items: flex-start; gap: 12px; }
   .gigs-grid { grid-template-columns: 1fr; }
