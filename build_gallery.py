@@ -2,7 +2,7 @@
 import os
 from PIL import Image
 
-GALLERY_DIR = 'assets/gallery'
+GALLERY_DIR = 'assets/Gallery'
 ROW_HEIGHT = 280  # target row height in px
 
 GIGS = [
