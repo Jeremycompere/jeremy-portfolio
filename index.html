@@ -100,9 +100,9 @@
         <div class="gig-card featured fade-up">
           <div class="gig-media" id="media-zamar">
             <img src="assets/zamar-main.jpg" alt="Jeremy at ZAMAR 7.0 — red LED panels, full orchestra stage">
-            <a href="https://www.youtube.com/live/hGj8Z8P78Vo?si=hBh2ZDb9lhfs1rB1" target="_blank" class="gig-video-btn" title="Watch ZAMAR 7.0 highlight">
+            <button class="gig-video-btn" data-video="https://www.youtube.com/embed/hGj8Z8P78Vo?autoplay=1" title="Watch ZAMAR 7.0 highlight">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            </a>
+            </button>
           </div>
 
           <!-- ZAMAR gallery strip -->
@@ -134,9 +134,9 @@
         <div class="gig-card fade-up" style="transition-delay:0.1s">
           <div class="gig-media" id="media-toontopia" style="background: linear-gradient(135deg, #2A1F3D 0%, #4A3860 100%);">
             <img src="assets/toontopia-main.jpg" alt="Jeremy at Toontopia 1st Edition — arms wide, big smile on stage, purple tee">
-            <a href="https://www.instagram.com/reel/DY17t7UgP6P/?igsh=c2QzeTBtcWYwcmVs" target="_blank" class="gig-video-btn" title="Watch Toontopia 2nd Edition highlight">
+            <button class="gig-video-btn" data-video="https://www.instagram.com/reel/DY17t7UgP6P/embed/" title="Watch Toontopia 2nd Edition highlight">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            </a>
+            </button>
           </div>
           <!-- Toontopia gallery strip -->
           <div style="display:flex;gap:2px;margin-top:2px;">
@@ -187,9 +187,9 @@
         <div class="gig-card fade-up" style="transition-delay:0.2s">
           <div class="gig-media" id="media-wiflow" style="background: linear-gradient(135deg, #0A1A2A 0%, #1A3A5A 100%);">
             <img src="assets/wiflow-main.jpg" alt="Jeremy at Wiflow Africa Music Masterclass Day 4 — pointing, New Year New Sound screen">
-            <a href="https://www.instagram.com/reel/DUYckZkCvD-/?igsh=MWJtamk4NTFhM2F1aw==" target="_blank" class="gig-video-btn" title="Watch Wiflow masterclass highlights">
+            <button class="gig-video-btn" data-video="https://www.instagram.com/reel/DUYckZkCvD-/embed/" title="Watch Wiflow masterclass highlights">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            </a>
+            </button>
           </div>
           <!-- Wiflow gallery strip -->
           <div style="display:flex;gap:2px;margin-top:2px;">
@@ -217,9 +217,9 @@
         <div class="gig-card fade-up" style="transition-delay:0.25s">
           <div class="gig-media" id="media-wedding1" style="background: linear-gradient(135deg, #3C3530 0%, #6A5E52 100%);">
             <img src="assets/wedding1-main.jpg" alt="Jeremy hosting Wilkinson & Peace wedding — packed room, white jacket">
-            <a href="https://drive.google.com/file/d/1XgoGX-kYn6cxbxkNeKXOT5AZarzo57L_/view?usp=drivesdk" target="_blank" class="gig-video-btn" title="Watch wedding highlights">
+            <button class="gig-video-btn" data-video="https://drive.google.com/file/d/1XgoGX-kYn6cxbxkNeKXOT5AZarzo57L_/preview" title="Watch wedding highlights">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            </a>
+            </button>
           </div>
           <!-- Wilkinson & Peace gallery strip -->
           <div style="display:flex;gap:2px;margin-top:2px;">
@@ -246,9 +246,9 @@
         <div class="gig-card fade-up" style="transition-delay:0.30s">
           <div class="gig-media" id="media-wedding2" style="background: linear-gradient(135deg, #2A1F2A 0%, #5A3A5A 100%);">
             <img src="assets/wedding2-main.jpg" alt="Jeremy with Victor & Blessing — couple on the throne, warm lighting">
-            <a href="https://drive.google.com/file/d/1aIB-cyWnCfcYbhZDy2fTeJJ9B41hGA3U/view?usp=drivesdk" target="_blank" class="gig-video-btn" title="Watch reception highlights">
+            <button class="gig-video-btn" data-video="https://drive.google.com/file/d/1aIB-cyWnCfcYbhZDy2fTeJJ9B41hGA3U/preview" title="Watch reception highlights">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            </a>
+            </button>
           </div>
           <!-- Victor & Blessing gallery strip -->
           <div style="display:flex;gap:2px;margin-top:2px;">
@@ -468,6 +468,15 @@
       <p style="margin:0;">© 2026 Jeremiah Ibiwoye · Jeremy · Compere &amp; MC · Lagos, Nigeria</p>
     </div>
   </footer>
+
+  <!-- VIDEO LIGHTBOX MODAL -->
+  <div id="video-modal" class="video-modal">
+    <div class="video-modal-backdrop"></div>
+    <div class="video-modal-content">
+      <button class="video-modal-close" title="Close">&times;</button>
+      <iframe id="video-modal-iframe" allowfullscreen allow="autoplay; encrypted-media" frameborder="0"></iframe>
+    </div>
+  </div>
 
 </body>
 </html>
