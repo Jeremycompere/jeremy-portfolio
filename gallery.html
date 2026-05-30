@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jeremy — Full event gallery. Photos from ZAMAR, Toontopia, TEDx, Wiflow, weddings and more.">
+  <title>Gallery — Jeremy | Compere &amp; MC</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    /* ── Gallery Page Overrides ── */
+    .gallery-hero {
+      padding: 140px 52px 60px;
+      text-align: center;
+    }
+    .gallery-hero h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(36px, 5vw, 60px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+    .gallery-hero h1 em {
+      font-style: italic; font-weight: 300; color: var(--azure);
+    }
+    .gallery-hero p {
+      color: var(--warm-mid); font-size: 14px; font-weight: 300;
+      max-width: 480px; margin: 0 auto;
+    }
+    .gallery-back {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; text-decoration: none;
+      color: var(--azure); margin-bottom: 32px;
+      transition: color 0.2s;
+    }
+    .gallery-back:hover { color: var(--ink); }
+
+    .gallery-section {
+      padding: 0 52px 64px;
+    }
+    .gallery-gig-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 24px; font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule);
+      color: var(--ink);
+    }
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .gallery-grid img {
+      display: block;
+      min-width: 120px;
+      max-height: 280px;
+      border-radius: 2px;
+      transition: opacity 0.2s;
+      cursor: pointer;
+    }
+    .gallery-grid img:hover {
+      opacity: 0.85;
+    }
+
+    /* Lightbox */
+    .gallery-lightbox {
+      position: fixed; inset: 0; z-index: 9999;
+      background: rgba(0,0,0,0.92);
+      backdrop-filter: blur(10px);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s;
+      cursor: pointer;
+    }
+    .gallery-lightbox.active {
+      opacity: 1; visibility: visible;
+    }
+    .gallery-lightbox img {
+      max-width: 92vw; max-height: 90vh;
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 20px 80px rgba(0,0,0,0.5);
+      cursor: default;
+    }
+    .gallery-lightbox-close {
+      position: absolute; top: 24px; right: 28px;
+      width: 40px; height: 40px;
+      background: rgba(255,255,255,0.1);
+      border: none; border-radius: 50%;
+      color: #fff; font-size: 24px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .gallery-lightbox-close:hover {
+      background: rgba(255,255,255,0.25);
+    }
+
+    @media (max-width: 960px) {
+      .gallery-section { padding: 0 16px 48px; }
+      .gallery-hero { padding: 120px 24px 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+      <a class="nav-logo" href="index.html" style="display:flex;align-items:center;">
+        <img src="assets/logo.png" alt="Jeremy Logo" style="height:44px;width:auto;display:block;">
+      </a>
+      <div class="nav-links">
+        <a href="index.html#gigs">Gigs</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#rates">Rates</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="gallery-hero">
+      <a href="index.html" class="gallery-back">← Back to Home</a>
+      <h1>Event <em>Gallery</em></h1>
+      <p>A visual journey through Jeremy's events — from orchestra stages to wedding venues.</p>
+    </div>
+
+    <section class="gallery-section">
+      <h2 class="gallery-gig-title">ZAMAR 6.0 &amp; 7.0</h2>
+      <div class="gallery-grid">
+      <img src="assets/gallery/Zamar/photo_1_2026-05-30_09-54-25.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Zamar/photo_2_2026-05-30_09-54-25.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Zamar/photo_3_2026-05-30_09-54-25.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Zamar/photo_4_2026-05-30_09-54-25.jpg" alt="" style="flex-grow:75;flex-basis:210px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Zamar/photo_5_2026-05-30_09-54-25.jpg" alt="" style="flex-grow:75;flex-basis:210px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Zamar/photo_6_2026-05-30_09-54-25.jpg" alt="" style="flex-grow:75;flex-basis:210px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Zamar/photo_7_2026-05-30_10-10-20.jpg" alt="" style="flex-grow:80;flex-basis:224px;height:280px;object-fit:cover;">
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2 class="gallery-gig-title">Toontopia Animation Festival</h2>
+      <div class="gallery-grid">
+      <img src="assets/gallery/Toontopia/photo_10_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_11_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_12_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_13_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_14_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:67;flex-basis:186px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_15_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_1_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_1_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:75;flex-basis:210px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_2_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_2_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:75;flex-basis:210px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_3_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_3_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:75;flex-basis:210px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_4_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_5_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_6_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_7_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_8_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Toontopia/photo_9_2026-05-30_09-50-31.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2 class="gallery-gig-title">TEDx: Rewriting Limits</h2>
+      <div class="gallery-grid">
+      <img src="assets/gallery/TedX/photo_10_2026-05-30_09-49-28.jpg" alt="" style="flex-grow:73;flex-basis:205px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/TedX/photo_1_2026-05-30_09-49-28.jpg" alt="" style="flex-grow:67;flex-basis:186px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/TedX/photo_2_2026-05-30_09-49-28.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/TedX/photo_3_2026-05-30_09-49-28.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/TedX/photo_4_2026-05-30_09-49-28.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/TedX/photo_5_2026-05-30_09-49-28.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/TedX/photo_6_2026-05-30_09-49-28.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/TedX/photo_7_2026-05-30_09-49-28.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/TedX/photo_8_2026-05-30_09-49-28.jpg" alt="" style="flex-grow:83;flex-basis:233px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/TedX/photo_9_2026-05-30_09-49-28.jpg" alt="" style="flex-grow:92;flex-basis:256px;height:280px;object-fit:cover;">
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2 class="gallery-gig-title">Wiflow Africa Music Masterclass</h2>
+      <div class="gallery-grid">
+      <img src="assets/gallery/Wiflow masterclass/photo_10_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_11_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_12_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_13_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_14_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_15_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_16_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_17_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:80;flex-basis:224px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_18_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:80;flex-basis:224px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_19_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_1_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_20_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:80;flex-basis:224px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_21_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:128;flex-basis:359px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_22_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:141;flex-basis:394px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_23_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_24_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_25_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_26_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_27_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_28_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:159;flex-basis:444px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_29_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:67;flex-basis:186px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_2_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_30_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_31_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_32_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:75;flex-basis:210px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_3_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_4_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:80;flex-basis:224px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_5_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_6_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:140;flex-basis:391px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_7_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_8_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wiflow masterclass/photo_9_2026-05-30_09-48-23.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2 class="gallery-gig-title">Wilkinson &amp; Peace Wedding</h2>
+      <div class="gallery-grid">
+      <img src="assets/gallery/Wilkinson and peace/photo_10_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:122;flex-basis:340px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_11_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_12_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_13_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_14_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_15_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_16_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_17_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_18_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:125;flex-basis:350px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_19_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:140;flex-basis:392px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_20_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:130;flex-basis:364px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_21_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_22_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:122;flex-basis:342px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_23_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:147;flex-basis:411px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_24_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_25_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_26_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:125;flex-basis:350px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_4_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_5_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:125;flex-basis:350px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_6_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_7_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:150;flex-basis:420px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Wilkinson and peace/photo_9_2026-05-30_09-51-41.jpg" alt="" style="flex-grow:140;flex-basis:391px;height:280px;object-fit:cover;">
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2 class="gallery-gig-title">Victor &amp; Blessing Wedding</h2>
+      <div class="gallery-grid">
+      <img src="assets/gallery/Victor and blessing/photo_10_2026-05-29_20-10-52.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Victor and blessing/photo_11_2026-05-29_20-10-52.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Victor and blessing/photo_1_2026-05-29_20-10-52.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Victor and blessing/photo_2_2026-05-29_20-10-52.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Victor and blessing/photo_3_2026-05-29_20-10-52.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Victor and blessing/photo_4_2026-05-29_20-10-52.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Victor and blessing/photo_5_2026-05-29_20-10-52.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      <img src="assets/gallery/Victor and blessing/photo_6_2026-05-29_20-10-52.jpg" alt="" style="flex-grow:150;flex-basis:419px;height:280px;object-fit:cover;">
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <img src="assets/logo.png" alt="Jeremy Small Logo" style="height:28px;width:auto;opacity:0.55;">
+      <p style="margin:0;">&copy; 2026 Jeremiah Ibiwoye &middot; Jeremy &middot; Compere &amp; MC &middot; Lagos, Nigeria</p>
+    </div>
+  </footer>
+
+  <!-- IMAGE LIGHTBOX -->
+  <div class="gallery-lightbox" id="gallery-lightbox">
+    <button class="gallery-lightbox-close" title="Close">&times;</button>
+    <img id="gallery-lightbox-img" src="" alt="">
+  </div>
+
+  <script>
+    // Lightbox for gallery images
+    (function() {
+      var lb = document.getElementById('gallery-lightbox');
+      var lbImg = document.getElementById('gallery-lightbox-img');
+      var closeBtn = lb.querySelector('.gallery-lightbox-close');
+
+      document.querySelectorAll('.gallery-grid img').forEach(function(img) {
+        img.addEventListener('click', function() {
+          lbImg.src = img.src;
+          lb.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      function closeLb() {
+        lb.classList.remove('active');
+        document.body.style.overflow = '';
+        setTimeout(function() { lbImg.src = ''; }, 300);
+      }
+
+      closeBtn.addEventListener('click', closeLb);
+      lb.addEventListener('click', function(e) {
+        if (e.target === lb) closeLb();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lb.classList.contains('active')) closeLb();
+      });
+    })();
+  </script>
+
+</body>
+</html>
