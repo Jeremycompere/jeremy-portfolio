@@ -10,6 +10,7 @@ GIGS = [
     ('Toontopia', 'Toontopia Animation Festival'),
     ('TedX', 'TEDx: Rewriting Limits'),
     ('ICS 2nd Edition', 'The Industrialist Summit'),
+    ('This life is funny', 'This Life Is Funny: A Christian Comedy Show'),
     ('Wiflow masterclass', 'Wiflow Africa Music Masterclass'),
     ('Wilkinson and peace', 'Wilkinson &amp; Peace Wedding'),
     ('Victor and blessing', 'Victor &amp; Blessing Wedding'),
