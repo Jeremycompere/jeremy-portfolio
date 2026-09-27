@@ -9,6 +9,7 @@ GIGS = [
     ('Zamar', 'ZAMAR 6.0 &amp; 7.0'),
     ('Toontopia', 'Toontopia Animation Festival'),
     ('TedX', 'TEDx: Rewriting Limits'),
+    ('ICS 2nd Edition', 'The Industrialist Summit'),
     ('Wiflow masterclass', 'Wiflow Africa Music Masterclass'),
     ('Wilkinson and peace', 'Wilkinson &amp; Peace Wedding'),
     ('Victor and blessing', 'Victor &amp; Blessing Wedding'),
